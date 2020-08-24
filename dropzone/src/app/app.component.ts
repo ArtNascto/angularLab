@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { DropzoneComponent } from './dropzone/dropzone.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dropzoneLab';
+  @ViewChild(DropzoneComponent) dropzone;
+  uploadFile($event) {
+    console.log({ event: $event });
+  }
+  deleteFile($event) {
+    console.log({ event: $event });
+  }
 }

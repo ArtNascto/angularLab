@@ -1,0 +1,262 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.text-center {
+  text-align: center !important;
+}
+
+.drop-without-files {
+  border: 2px dashed #0087f7;
+  border-radius: 5px;
+  background: white;
+  min-height: 150px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 54px 54px;
+  box-sizing: border-box;
+}
+.drop-with-files {
+  border: 2px dashed #0087f7;
+  border-radius: 5px;
+  background: white;
+  min-height: 150px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 54px 54px;
+  box-sizing: border-box;
+}
+
+.drop-label {
+  max-width: 100%;
+  white-space: normal;
+  font-size: 1rem;
+}
+.drop-label-with-files {
+  text-align: center;
+  max-width: 100%;
+  white-space: normal;
+  font-size: 1rem;
+}
+.old-preview {
+  flex: 0 0 25% !important;
+  font-size: 2em !important;
+  text-align: center !important;
+  padding: 1em 0 !important;
+  margin: 0.2em !important;
+  background-color: #ccc !important;
+  border-radius: 0.5em !important;
+  user-select: none !important;
+}
+.preview-img {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+.template-image:hover {
+  opacity: 0.8;
+}
+.dropzone-preview {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 16px;
+  min-height: 100px;
+}
+.dropzone-preview-label-name {
+  max-width: 100%;
+  white-space: normal;
+  font-weight: bold;
+}
+.dropzone-preview-label-information {
+  max-width: 100%;
+  white-space: normal;
+  font-weight: bolder;
+}
+@media (min-width: 576px) {
+  .col-sm-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.flex-row {
+  flex-direction: row !important;
+}
+.d-flex {
+  display: flex !important;
+}
+@media (min-width: 576px) {
+  .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: left !important;
+}
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+.mt-2,
+.mx-2 {
+  margin-top: 0.5rem !important;
+}
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+.mb-2,
+.mx-2 {
+  margin-bottom: 0.5rem !important;
+}
+.label-success{
+  color: #28a745!important;
+}
+.label-danger {
+  color: #dc3545!important;
+}
+.dropzone-tooltip{
+  margin-top: .2em;
+  background-color: rgba(0, 0, 0, 0.192);
+  border-bottom: 1px dotted black;
+}
+.tooltip-content{
+  width: 15rem;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
