@@ -105,14 +105,14 @@
   min-height: 100px;
 }
 .dropzone-preview-label-name {
-  max-width: 100%;
   white-space: normal;
   font-weight: bold;
+  width: max-content;
 }
 .dropzone-preview-label-information {
-  max-width: 100%;
   white-space: normal;
   font-weight: bolder;
+  width: max-content;
 }
 @media (min-width: 576px) {
   .col-sm-4 {
@@ -237,25 +237,25 @@
 .mx-2 {
   margin-bottom: 0.5rem !important;
 }
-.label-success{
-  color: #28a745!important;
+.label-success {
+  color: #28a745 !important;
 }
 .label-danger {
-  color: #dc3545!important;
+  color: #dc3545 !important;
 }
-.dropzone-tooltip{
-  margin-top: .2em;
+.dropzone-tooltip {
+  margin-top: 0.2em;
   background-color: rgba(0, 0, 0, 0.192);
   border-bottom: 1px dotted black;
 }
-.tooltip-content{
+.tooltip-content {
   width: 15rem;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;

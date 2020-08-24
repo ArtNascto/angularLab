@@ -56,7 +56,7 @@ import { v4 as uuidv4 } from 'uuid';
         <div
           id="dropzonePreviewContainer_{{ _dropzoneId }}"
           class="d-flex flex-row flex-wrap "
-          style="width:fit-content; height:fit-content; "
+          style="width:max-content;"
           *ngIf="dropFiles.length > 0 && !dropLabelWithFiles"
         >
           <div
