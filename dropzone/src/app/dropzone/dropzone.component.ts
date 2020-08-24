@@ -55,16 +55,15 @@ import { v4 as uuidv4 } from 'uuid';
 
         <div
           id="dropzonePreviewContainer_{{ _dropzoneId }}"
-          class="d-flex flex-row flex-wrap "
-          style="width:max-content;"
+          class="d-flex flex-row flex-wrap dropzone-preview-container"
+          
           *ngIf="dropFiles.length > 0 && !dropLabelWithFiles"
         >
           <div
             id="dropzonePreview_{{ _dropzoneId }}_{{ file.id }}"
             id="dropzone-preview"
             *ngFor="let file of dropFiles"
-            style="margin-bottom: 2em !important;"
-            class="col-sm-4 justify-content-left"
+            class="col-sm-4 justify-content-left dropzone-preview"
           >
             <div
               *ngIf="file.accepted"
@@ -282,7 +281,7 @@ export class DropzoneComponent implements AfterViewInit, OnInit {
     if (!this.Id || this.Id.length === 0) {
       this._dropzoneId = this.generateRandomId(7);
     } else {
-      this._dropzoneId = this.Id;
+      this._dropzoneId = `${this.Id}_${this.generateRandomId(3)}` ;
     }
     if (!this.multipleFile) {
       this._multipleFile = false;
@@ -316,7 +315,7 @@ export class DropzoneComponent implements AfterViewInit, OnInit {
 
   ngAfterViewInit(): void {
     this.dropContent = new Dropzone('div#' + this._dropzoneId, {
-      url: '/upload',
+      url: '/deadWay',
       autoQueue: false,
       autoProcessQueue: false,
       addedfiles: (files) => {
@@ -355,7 +354,6 @@ export class DropzoneComponent implements AfterViewInit, OnInit {
             }
           }
         });
-        // (this.dropContent.options.clickable = `#dropzonePreviewContainer_${this._dropzoneId}`),
         this.filesAdded.emit({ files: this.dropFiles });
       },
       thumbnail: (file: any, dataURL) => {
@@ -370,7 +368,6 @@ export class DropzoneComponent implements AfterViewInit, OnInit {
       previewTemplate: document.getElementById('dropzone-preview-disabled')
         .innerHTML,
     });
-    console.log(this.dropContent);
   }
   removeFile(file: FileDropzone) {
     this.dropFiles = this.dropFiles.filter((d) => {

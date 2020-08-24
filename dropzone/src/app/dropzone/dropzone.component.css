@@ -98,11 +98,8 @@
   opacity: 0.8;
 }
 .dropzone-preview {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin: 16px;
-  min-height: 100px;
+  margin-bottom: 2em !important;
+  margin-right: 2em !important;
 }
 .dropzone-preview-label-name {
   white-space: normal;
@@ -259,4 +256,7 @@
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;
+}
+.dropzone-preview-container {
+  width: fit-content;
 }
